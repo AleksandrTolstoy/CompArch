@@ -7,11 +7,12 @@
 
 .global bootload
 .section .rodata
-    image: .incbin "kernel.bin"
+image: .incbin "kernel.bin"
     end_of_image:
     str_boot_start: .asciz "bootloader started"
     str_boot_end: .asciz "bootloader end"
     str_boot_indicate: .asciz "#"
+
 .section .text
 bootload:
     ldrh r0, = str_boot_start

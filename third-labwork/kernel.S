@@ -21,6 +21,7 @@ vtable_kernel:
 .section .rodata
     data: .asciz "kernel started!\n"
     final: .asciz "Value in register #1: "
+
 .section .text
 __kernel_reset__:
     ldr r0, = data
