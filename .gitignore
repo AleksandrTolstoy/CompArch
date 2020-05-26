@@ -1,0 +1,13 @@
+.*
+
+*.o
+*.ko
+
+*.bin
+*.elf
+
+*.mod.c
+*.mod.o
+
+*.order
+*.symvers
